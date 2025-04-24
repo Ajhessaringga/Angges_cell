@@ -181,6 +181,8 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       font-size: 16px;
+      background-color: #fff;
+      color: #333;
     }
     
     .form-group button {
@@ -364,6 +366,11 @@
     
     /* Mobile Responsive Styles */
     @media (max-width: 768px) {
+      /* Background and display fixes */
+      .background-overlay {
+        background-color: rgba(0, 0, 0, 0.7); /* Darker for better contrast */
+      }
+      
       /* Header adjustments */
       header .container {
         flex-direction: column;
@@ -390,6 +397,8 @@
       .nav-link {
         padding: 6px 10px;
         font-size: 0.9em;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-weight: bold;
       }
       
       /* Hero section */
@@ -415,19 +424,31 @@
       .stok-section {
         padding: 15px;
         margin-bottom: 20px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 8px;
       }
       
       .stok-section h2 {
         font-size: 1.5em;
         margin-bottom: 15px;
+        color: #333;
       }
       
+      .stok-section h3 {
+        color: #333;
+      }
+      
+      /* Form improvements */
       .form-group {
         margin-bottom: 15px;
       }
       
       .form-group label {
         font-size: 0.9em;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
       }
       
       .form-group input, 
@@ -435,6 +456,13 @@
       .form-group textarea {
         padding: 8px 10px;
         font-size: 0.9em;
+        background-color: #f8f8f8;
+        color: #333;
+        border: 1px solid #ccc;
+      }
+      
+      .form-group input::placeholder {
+        color: #777;
       }
       
       .form-buttons {
@@ -447,6 +475,14 @@
         width: 100%;
         margin-right: 0;
         margin-bottom: 5px;
+      }
+      
+      /* Table improvements */
+      table th, table td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+        background-color: #fff;
+        color: #333;
       }
       
       /* Contact section */
@@ -488,11 +524,6 @@
       
       .table-container {
         margin-bottom: 15px;
-      }
-      
-      table th, table td {
-        padding: 8px 10px;
-        font-size: 0.9em;
       }
     }
     
